@@ -1,0 +1,113 @@
+/* MEDIA QUERY 1024px */
+
+/* MEDIA QUERY 991px */
+@media (max-width: 991px) {
+    .navContainer {
+        padding: 2.3rem 2rem 0 2rem;
+    }
+
+    /* Product Items */
+
+    .landingProductSection{
+        position: static;
+    }
+
+    .faqSection{
+        margin: 0;
+    }
+
+}
+
+/* MEDIA QUERY 767px */
+@media (max-width: 768px) {
+
+    /* GENERAL CSS START */
+    body,
+    html {
+        font-size: 8px;
+    }
+
+    /* GENERAL CSS END */
+
+    /* BANNER SECTION CSS START */
+    .bannerSection {
+        min-height: 70vh;
+    }
+
+    /* BANNER SECTION CSS END */
+
+
+    /* PRODUCT SECTION START */
+    .pContent {
+        text-align: center;
+    }
+
+    .pSubtitle {
+        width: 100%;
+    }
+
+    /* PRODUCT SECTION END */
+
+    /* FAQ SECTION START*/
+    
+    .accordionParentColor{
+        /* background-color: transparent !important; */
+        margin: 0 10rem !important;
+    }
+    /* FAQ SECTION END*/
+
+
+    /* FOOTER SECTION START */
+    .footerSection .footerContentSection {
+        margin-left: 0;
+    }
+
+    /* FOOTER SECTION END */
+
+
+}
+
+/* MEDIA QUERY 590px */
+@media (max-width: 590px) {
+
+    /* GENERAL CSS START */
+    body,
+    html {
+        font-size: 7px;
+    }
+
+    /* GENERAL CSS END */
+
+    .navContainer {
+        padding: 2.3rem 2rem 0 2rem;
+    }
+
+
+    /* BANNER CONTENT RESPONSIVE */
+    .bannerSection .bannerContentSection {
+        margin-top: 11.6rem;
+        margin-left: 2rem;
+    }
+
+    .bannerSection .boxInBannerWrapper .emailSection{
+        flex-flow: column;
+    }
+
+    .bannerSection .boxInBannerWrapper .emailSection input{
+        width: 100%;
+    }
+
+    /* FAQ */
+    .faqSection{
+        margin: 4rem;
+    }
+
+    .faqSection .emailSection{
+        flex-flow: column;
+    }
+
+    .faqSection .emailSection input{
+        width: 100%;
+    }
+
+}

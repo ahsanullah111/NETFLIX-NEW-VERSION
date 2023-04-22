@@ -1,0 +1,521 @@
+/* IMPORTING FONT_FAMILY */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* COMMON CSS STYLES START */
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+}
+
+:root {
+    /* Background Color */
+    --bg-color: #00081d;
+
+    /* Text Color */
+    --secondary-color: #e50914;
+    --text-white: #ffffff;
+    --text-gray: ##9b9b9b;
+
+    /* Font Family */
+    --primary-font: sans-serif;
+}
+
+body,
+html {
+    font-size: 10px;
+    font-family: var(--primary-font);
+    scroll-behavior: smooth;
+    line-height: 1.5;
+    background-color: var(--bg-color);
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+p {
+    margin: 0;
+}
+
+h1 {
+    font-size: 9rem;
+    line-height: 1.4;
+    font-weight: 600;
+    color: var(--text-white);
+}
+
+h2 {
+    color: var(--text-white);
+    font-size: 4.7rem;
+    font-weight: 600;
+    display: inline-block;
+    line-height: 1.2;
+    letter-spacing: 0.2rem;
+    margin-bottom: 2rem;
+}
+
+h3 {
+    color: var(--text-white);
+    font-size: 3.1rem;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--text-white);
+}
+
+h5 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1;
+    color: var(--text-white);
+}
+
+embed,
+iframe,
+img,
+object {
+    max-width: 100%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a,
+a:active,
+a:focus,
+a:hover,
+button {
+    text-decoration: none;
+    outline: 0;
+}
+
+li a {
+    color: var(--text-white);
+}
+
+a:hover,
+button:hover {
+    -webkit-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+}
+
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-white);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--secondary-color);
+}
+
+
+section {
+    padding: 5rem 0;
+}
+
+/* COMMON CSS STYLES END */
+
+
+/* CSS FOR NAVBAR START */
+
+.header {
+    position: absolute;
+    width: 100%;
+    top: 2.5rem;
+    left: 0;
+    z-index: 2;
+}
+
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 8rem;
+}
+
+.signInBtn {
+    position: relative;
+    color: var(--text-white);
+    background: var(--secondary-color);
+    z-index: 1;
+    overflow: hidden;
+    border: transparent;
+    padding: 0.5rem 1.7rem;
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+.signInBtn:hover {
+    background-color: rgba(229, 9, 20, 0.80);
+    border: transparent;
+    color: var(--text-white);
+}
+
+
+/* NAVBAR LOGO */
+.header .navbar-brand {
+    width: 15rem;
+}
+
+/* NAVBAR SCROLLING USED IN INDEX.JS*/
+.headerScrolled {
+    position: fixed;
+    top: -0.4rem;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 1320px;
+    margin: auto;
+    z-index: 999;
+    transition: 0.3s all ease-in-out;
+}
+
+/* CSS FOR NAVBAR END */
+
+
+/* CSS FOR BANNER START */
+.bannerSection {
+    background-image: linear-gradient(0deg, rgba(0, 8, 29, 0.7), rgba(0, 8, 29, 0.7)), url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    min-height: 145vh;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.bannerSection .bannerContentSection {
+    margin-top: 11.6rem;
+    text-align: left;
+}
+
+.bannerSection .mainHeading {
+    color: var(--text-white);
+    font-weight: 900;
+    font-size: 5.8rem;
+    line-height: 7.7rem;
+}
+
+.bannerSection .message {
+    color: var(--text-white);
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 7.7rem;
+}
+
+.bannerSection .boxInBanner {
+    padding: 2.5rem 4rem;
+
+    /* BORDER COLOR LINEAR GRADIENT COLOR AND RADIUS */
+    background: linear-gradient(var(--bg-color), var(--bg-color)) padding-box,
+        linear-gradient(to right, red, blue) border-box;
+    border-radius: 1rem;
+    border: 4px solid transparent;
+    /* BORDER COLOR LINEAR GRADIENT COLOR AND RADIUS */
+
+}
+
+.bannerSection .subContent {
+    color: var(--text-white);
+    font-size: 2rem;
+}
+
+.bannerSection button {
+    color: var(--text-white);
+    background: var(--secondary-color);
+    z-index: 1;
+    overflow: hidden;
+    border-radius: 5px;
+    border: transparent;
+    padding: 0.8rem 0.9vw;
+    font-weight: 600;
+    font-size: 2.3rem;
+}
+
+
+.bannerSection button:hover {
+    background-color: rgba(229, 9, 20, 0.80);
+    border: transparent;
+    color: var(--text-white);
+}
+
+.bannerSection .form-control {
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    background-color: rgba(0 0 0/40%);
+    color: var(--text-white);
+    width: 28vw;
+}
+
+.bannerSection .form-control:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: var(--secondary-color);
+}
+
+.bannerSection .form-control::placeholder {
+    color: var(--text-gray) !important;
+}
+
+/* CSS FOR BANNER END */
+
+
+
+
+
+/* CSS FOR PRODUCT DESIGN START */
+
+.landingProductSection {
+    position: relative;
+    top: -30rem;
+    background-color: rgba(0, 8, 29, 0.4);
+}
+
+.productWrapper {
+    background-color: #090626;
+    position: relative;
+    top: -5rem;
+    width: 92vw;
+    border-radius: 1.3rem;
+}
+
+.pContent {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0;
+    margin: 0 9rem;
+}
+
+.pBorder {
+    border-bottom: 1px solid rgb(209 206 206 /40%);
+}
+
+.pTitle {
+    color: var(--text-white);
+    font-size: 4.5rem;
+    font-weight: 800;
+}
+
+.pSubtitle {
+    color: var(--text-white);
+    font-size: 2.2rem;
+    font-weight: 200;
+}
+
+/* CSS FOR PRODUCT DESIGN END */
+
+
+/* CSS FOR FAQ START */
+.faqSection {
+    margin: -20% 15rem 0 15rem;
+}
+
+.faqSection p {
+    color: var(--text-white);
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: left;
+}
+
+.faqSection .subContent {
+    color: var(--text-white);
+    font-size: 2rem;
+}
+
+.faqSection button {
+    color: var(--text-white);
+    background: var(--secondary-color);
+    z-index: 1;
+    overflow: hidden;
+    border-radius: 5px;
+    border: transparent;
+    padding: 0.8rem 0.9vw;
+    font-weight: 600;
+    font-size: 2.3rem;
+}
+
+
+.faqSection button:hover {
+    background-color: rgba(229, 9, 20, 0.80);
+    border: transparent;
+    color: var(--text-white);
+}
+
+.faqSection .form-control {
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    background-color: rgba(0 0 0/40%);
+    color: var(--text-white);
+    width: 28vw;
+}
+
+.faqSection .form-control:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: var(--secondary-color);
+}
+
+.faqSection .form-control::placeholder {
+    color: var(--text-gray) !important;
+}
+
+
+
+
+/* CSS FOR ACCORDION START */
+
+
+.accordionParent{
+    background-color: transparent !important;
+    border: 1rem solid var(--bg-color);
+}
+
+.accordionParent button{
+    padding: 1.8rem;
+}
+
+.accordionSetting{
+    outline: none !important;
+    box-shadow: none !important;
+    background-color: #132144 !important;
+    color: #ffffff !important;
+    font-size: 2.3rem;
+    padding: 1.8rem 2rem;
+}
+
+.accordionSetting p{
+    font-size: 2.3rem;
+    font-weight: normal;
+}
+
+.accordionMargin{
+    margin-top: 0.1rem;
+}
+
+.accordion-button.collapsed::after {
+    background: url("../images/plusSvg48px.svg");
+    width: 48px;
+    height: 48px;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background: url("../images/closeSvg48px.svg");
+    width: 48px;
+    height: 48px;
+}
+/* CSS FOR ACCORDION END */
+/* CSS FOR FAQ END */
+
+
+/* CSS FOR FOOTER START */
+.footerSection .footerContentSection {
+    margin-left: 15rem;
+}
+
+.question p a {
+    color: #b0b0b0;
+    font-weight: 500;
+    font-size: 2rem;
+    text-decoration: 0.1rem underline;
+    cursor: default;
+}
+
+.footerContent p a {
+    color: #b0b0b0;
+    font-weight: 500;
+    font-size: 1.8rem;
+    text-decoration: 0.1rem underline;
+    cursor: default;
+    line-height: 4rem;
+}
+
+.footerEndPart .btn {
+    color: #ffffff;
+    letter-spacing: 0.2rem;
+    font-size: 1.7rem;
+    font-weight: 500;
+    border: 1px solid #b0b0b0;
+    padding: 0.3rem 1.2rem;
+}
+
+.footerEndPart .btn:focus {
+    -webkit-box-shadow: 0 0 5px 2px #fff;
+    -moz-box-shadow: 0 0 5px 2px #fff;
+    box-shadow: 0 0 5px 2px #fff;
+}
+
+.footerEndPart .globeIcon {
+    letter-spacing: 0.3rem;
+}
+
+.footerEndPart .dropdown-menu {
+    width: 100%;
+    border-radius: 20px;
+    background-color: transparent;
+}
+
+.footerEndPart .dropdown-item {
+    text-align: center;
+    border-radius: 20px;
+    font-size: 1.7rem;
+    background-color: #0d6efd;
+    margin-top: -0.9rem;
+    height: 27px;
+}
+
+.footerSection .copyrightSection {
+    background-color: var(--secondary-color);
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: -5rem;
+    color: var(--text-white);
+}
+
+.footerSection .copyrightSection p {
+    margin-top: 0;
+    padding: 3rem 0;
+    line-height: 0;
+    font-size: 1.8rem;
+}
+
+.footerSection .copyrightSection a {
+    color: var(--text-white);
+    font-weight: 600;
+}
+
+/* CSS FOR FOOTER END */
+
+
+/* UPWARD BUTTON CSS START */
+.upwardButton i {
+    position: fixed;
+    right: 3%;
+    bottom: 10%;
+    color: var(--secondary-color);
+}
+
+.upwardButton i {
+    font-size: 3rem;
+}
+/* UPWARD BUTTON CSS END */
